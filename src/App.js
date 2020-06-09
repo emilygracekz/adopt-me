@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
+import SearchParams from './searchParams';
 
-
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-       <h1>Adopt Me!</h1>
-    </div>
+  <div>
+    <h1>Adopt me!</h1>
+    <SearchParams />
+    
+  </div>
   );
-}
+};
 
 export default App;
