@@ -12,13 +12,14 @@ const useDropdown = (label, defaultState, options) => {
           onChange={(e) => setState(e.target.value)}
           onBlur={(e) => setState(e.target.value)}
           disabled={options.length === 0}
-        ></select>
-        <option>All</option>
-        {options.map(item => (
+        >
+          <option>All</option>
+          {options.map((item) => (
             <option key={item} value={item}>
-                {item}
+              {item}
             </option>
-        ))}
+          ))}
+        </select>
       </label>
     );
     return [state, Dropdown, setState]
